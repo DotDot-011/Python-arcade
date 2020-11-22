@@ -57,7 +57,7 @@ class PlayerCharacter(arcade.Sprite):
 
         self.HP = 200
 
-        main_path = "image/CHIBI KNIGHT-PNG/"
+        main_path = "CHIBI KNIGHT-PNG/"
 
         self.idle_texture_pair = load_texture_pair(f"{main_path}01-Idle_/2D_KNIGHT__Idle_000.png")
 
@@ -116,7 +116,7 @@ class GOBLIN (arcade.Sprite) :
 
         self.cur_attack = 0
 
-        main_path = "image/2D CHIBI GOBLIN/"
+        main_path = "2D CHIBI GOBLIN/"
 
         self.idle_texture_pair = load_texture_pair(f"{main_path}CHIBI GOBLIN-PNG/01-Idle_/01-NoBlink/2D_GOBLIN__Idle_000.png")
 
@@ -173,7 +173,7 @@ class SLIME (arcade.Sprite) :
 
         self.cur_attack = 0
 
-        self.idle_texture_pair = load_texture_pair("image/slime.png")
+        self.idle_texture_pair = load_texture_pair("slime.png")
         self.character_face_direction = LEFT_FACING
 
         self.texture = self.idle_texture_pair[self.character_face_direction]
@@ -252,7 +252,7 @@ class BUTTON (arcade.Sprite):
         self.pressed = False
         self.value  = BUTTON_VALUE
         self.BUTTON_TEXTURE = []
-        self.idle_texture_pair = load_texture_pair(f"image/BUTTON/{BUTTON_VALUE}.jpg")
+        self.idle_texture_pair = load_texture_pair(f"BUTTON/{BUTTON_VALUE}.jpg")
         texture = self.idle_texture_pair [LEFT_FACING]
         self.BUTTON_TEXTURE.append(texture)
         BUTTON_VALUE += 1
